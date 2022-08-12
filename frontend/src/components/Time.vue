@@ -19,7 +19,7 @@ export default {
   },
   created: async function () {
     this.startInterval()
-    const res = await fetch('http://52.45.173.107:5555/times')
+    const res = await fetch('https://myloadbalancer.dmitrybrv.click:5555/times')
     const json = await res.json()
     if (json.length) this.savedTimes = json
   },

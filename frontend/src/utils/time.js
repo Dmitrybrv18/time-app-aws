@@ -8,7 +8,7 @@ function startInterval() {
 
 async function saveTime() {
   const time = this.currentTime
-  const res = await fetch('http://52.45.173.107:5555/times', {
+  const res = await fetch('https://myloadbalancer.dmitrybrv.click:5555/times', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ async function saveTime() {
 }
 
 async function deleteTime(id) {
-  const res = await fetch(`http://52.45.173.107:5555/time/${id}`, {
+  const res = await fetch(`hhttps://myloadbalancer.dmitrybrv.click:5555/time/${id}`, {
     method: 'DELETE',
   })
   const json = await res.json()
